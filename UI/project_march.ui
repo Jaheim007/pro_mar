@@ -1,0 +1,679 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Project</class>
+ <widget class="QMainWindow" name="Project">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1207</width>
+    <height>740</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>-1</x>
+      <y>-1</y>
+      <width>1211</width>
+      <height>741</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="Main_page">
+     <widget class="QLabel" name="background_image_page1">
+      <property name="geometry">
+       <rect>
+        <x>-10</x>
+        <y>-10</y>
+        <width>1221</width>
+        <height>751</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="../resource.qrc">:/Images/Static/background.webp</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>40</y>
+        <width>211</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="../resource.qrc">:/Images/Static/LogoMakr-80ZEB9.png</pixmap>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="login_btn_to_direct">
+      <property name="geometry">
+       <rect>
+        <x>870</x>
+        <y>40</y>
+        <width>131</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 18pt &quot;.AppleSystemUIFont&quot;;
+background-color: #FFF;
+color: #1589FF;</string>
+      </property>
+      <property name="text">
+       <string>Connexion</string>
+      </property>
+      <property name="default">
+       <bool>false</bool>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="signin_btn_to_direct">
+      <property name="geometry">
+       <rect>
+        <x>1030</x>
+        <y>40</y>
+        <width>141</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 18pt &quot;.AppleSystemUIFont&quot;;
+color: #1589FF;
+background-color: #FFF;</string>
+      </property>
+      <property name="text">
+       <string>S'inscrire</string>
+      </property>
+      <property name="autoDefault">
+       <bool>false</bool>
+      </property>
+      <property name="default">
+       <bool>false</bool>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>180</y>
+        <width>511</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 40pt &quot;.AppleSystemUIFont&quot;;
+color: #A0CFEC;</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; text-decoration: underline;&quot;&gt;Bienvenue sur Code Breaker&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>240</y>
+        <width>601</width>
+        <height>141</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 28pt &quot;.AppleSystemUIFont&quot;;
+color: #1589FF;</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Rejoignez les millions d'apprenants à coder &lt;/p&gt;&lt;p&gt;avec Code Breaker gratuitement&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="start_now_btn">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>380</y>
+        <width>251</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 18pt &quot;.AppleSystemUIFont&quot;;
+color:#FFF;
+background-color:  #1589FF;</string>
+      </property>
+      <property name="text">
+       <string>Commencez maintenant</string>
+      </property>
+      <property name="default">
+       <bool>true</bool>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="login_page">
+     <widget class="QLabel" name="background_image_page1_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1211</width>
+        <height>741</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="../resource.qrc">:/Images/Static/background.webp</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>40</y>
+        <width>211</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="../resource.qrc">:/Images/Static/LogoMakr-80ZEB9.png</pixmap>
+      </property>
+     </widget>
+     <widget class="QFrame" name="frame">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>160</y>
+        <width>451</width>
+        <height>441</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLabel" name="label_4">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>30</y>
+         <width>341</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 20pt &quot;.AppleSystemUIFont&quot;;
+</string>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; text-decoration: underline;&quot;&gt;Connectez-vous à Code Breaker&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_6">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>100</y>
+         <width>231</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 15pt &quot;.AppleSystemUIFont&quot;;
+</string>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; text-decoration: underline;&quot;&gt;Email&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; text-decoration: underline;&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_7">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>200</y>
+         <width>81</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 15pt &quot;.AppleSystemUIFont&quot;;
+</string>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; text-decoration: underline;&quot;&gt;Password&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; text-decoration: underline;&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="email_line">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>130</y>
+         <width>341</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #F8F6F0;</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="password_line">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>230</y>
+         <width>341</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #F8F6F0;</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="login_btn">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>340</y>
+         <width>181</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 18pt &quot;.AppleSystemUIFont&quot;;
+color:#FFF;
+background-color:  #1589FF;</string>
+       </property>
+       <property name="text">
+        <string>Connexion</string>
+       </property>
+       <property name="default">
+        <bool>true</bool>
+       </property>
+       <property name="flat">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>710</x>
+        <y>40</y>
+        <width>271</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 20pt &quot;.AppleSystemUIFont&quot;;
+</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; text-decoration: underline;&quot;&gt;Vous n'avez pas de compte ?&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="signup_btn_to_signuppage">
+      <property name="geometry">
+       <rect>
+        <x>990</x>
+        <y>50</y>
+        <width>151</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 18pt &quot;.AppleSystemUIFont&quot;;
+color:#FFF;
+background-color:  #1589FF;</string>
+      </property>
+      <property name="text">
+       <string>S'inscrire</string>
+      </property>
+      <property name="default">
+       <bool>true</bool>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="signup_page">
+     <widget class="QPushButton" name="login_btn_to_loginpage">
+      <property name="geometry">
+       <rect>
+        <x>1020</x>
+        <y>40</y>
+        <width>141</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 16pt &quot;.AppleSystemUIFont&quot;;
+color:#FFF;
+background-color:  #1589FF;</string>
+      </property>
+      <property name="text">
+       <string>Connexion</string>
+      </property>
+      <property name="default">
+       <bool>true</bool>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>780</x>
+        <y>30</y>
+        <width>251</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 18pt &quot;.AppleSystemUIFont&quot;;
+</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; text-decoration: underline;&quot;&gt;Vous avez déjà un compte?&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="background_image_page1_3">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1211</width>
+        <height>751</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="../resource.qrc">:/Images/Static/background.webp</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QFrame" name="frame_2">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>90</y>
+        <width>451</width>
+        <height>621</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLabel" name="label_10">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>30</y>
+         <width>341</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 20pt &quot;.AppleSystemUIFont&quot;;
+</string>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; text-decoration: underline;&quot;&gt;Inscrivez-vous à Code Breaker&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_11">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>100</y>
+         <width>231</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 15pt &quot;.AppleSystemUIFont&quot;;
+</string>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; text-decoration: underline;&quot;&gt;Nom&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; text-decoration: underline;&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_12">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>190</y>
+         <width>81</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 15pt &quot;.AppleSystemUIFont&quot;;
+</string>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; text-decoration: underline;&quot;&gt;Prenom&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="nom_line">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>130</y>
+         <width>341</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #F8F6F0;</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="prenom_line">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>220</y>
+         <width>341</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #F8F6F0;</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="sign_email_line">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>310</y>
+         <width>341</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #F8F6F0;</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="sign_password_line">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>400</y>
+         <width>341</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #F8F6F0;</string>
+       </property>
+       <property name="echoMode">
+        <enum>QLineEdit::Password</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_14">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>280</y>
+         <width>231</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 15pt &quot;.AppleSystemUIFont&quot;;
+</string>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; text-decoration: underline;&quot;&gt;Email&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; text-decoration: underline;&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_15">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>460</y>
+         <width>231</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 15pt &quot;.AppleSystemUIFont&quot;;
+</string>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; text-decoration: underline;&quot;&gt;Confirmez le mot de passe&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="confirm_password">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>490</y>
+         <width>341</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #F8F6F0;</string>
+       </property>
+       <property name="echoMode">
+        <enum>QLineEdit::Password</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_16">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>370</y>
+         <width>231</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 15pt &quot;.AppleSystemUIFont&quot;;
+</string>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; text-decoration: underline;&quot;&gt;Mot de passe&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="signup_btn">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>550</y>
+         <width>181</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 18pt &quot;.AppleSystemUIFont&quot;;
+color:#FFF;
+background-color:  #1589FF;</string>
+       </property>
+       <property name="text">
+        <string>S'inscrire</string>
+       </property>
+       <property name="default">
+        <bool>true</bool>
+       </property>
+       <property name="flat">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="label_13">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>40</y>
+        <width>211</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="../resource.qrc">:/Images/Static/LogoMakr-80ZEB9.png</pixmap>
+      </property>
+     </widget>
+     <zorder>background_image_page1_3</zorder>
+     <zorder>login_btn_to_loginpage</zorder>
+     <zorder>label_9</zorder>
+     <zorder>frame_2</zorder>
+     <zorder>label_13</zorder>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,7 @@
+<RCC>
+  <qresource prefix="Images">
+    <file>Static/555-5554059_long-arrow-right-icon-hd-removebg-preview.png</file>
+    <file>Static/LogoMakr-80ZEB9.png</file>
+    <file>Static/background.webp</file>
+  </qresource>
+</RCC>
