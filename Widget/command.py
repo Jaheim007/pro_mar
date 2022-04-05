@@ -19,6 +19,7 @@ class Project(QMainWindow, Ui_Project):
         self.login_btn_to_loginpage.clicked.connect(self.login_within)
         self.signup_btn_to_signuppage.clicked.connect(self.signup_within)
         self.signup_btn.clicked.connect(self.save_in_database)
+        self.login_btn.clicked.connect(self.verify)
 
 #The Get Started btn in the center which is supposed to send me to the sign-up page. 
     def started(self):
@@ -73,7 +74,7 @@ class Project(QMainWindow, Ui_Project):
                                 email text,
                                 password text
                             )""") 
-                con.execute("INSERT INTO Userdata VALUES(:nom, :prenom, :email, :password, :confirm_password)", user_info)
+                con.execute("INSERT INTO Userdata VALUES(:nom, :prenom, :email, :password)", user_info)
    
                 
                 conn.commit()
@@ -112,5 +113,18 @@ class Project(QMainWindow, Ui_Project):
                 self.sign_password_line.clear()
                 self.confirm_password.clear()
             
+    def verify(self): 
+        open = sqlite3.connect('Database.db')
+        cur = open.cursor()
+        com = open.execute("SELECT * FROM Userdata where email = ? AND password = ?",(self.email_line.text(), self.password_line.text())) 
+        don = com.fetchone()
+        
+        if don:
+            QMessageBox.information(self, "Info", "Vous êtes connecté")
+    
+        else:
+            QMessageBox.warning(self, "Error", "Wrong")
+
+
             
         
