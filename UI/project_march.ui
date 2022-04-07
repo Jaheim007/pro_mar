@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1430</width>
-    <height>859</height>
+    <height>860</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -654,7 +654,7 @@ color: rgb(255, 255, 255);
         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; text-decoration: underline;&quot;&gt;Language de progammation&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; text-decoration: underline;&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
-      <widget class="QPushButton" name="signup_btn_2">
+      <widget class="QPushButton" name="html_btn">
        <property name="geometry">
         <rect>
          <x>-50</x>
@@ -678,7 +678,7 @@ background-color: #123456;</string>
         <bool>true</bool>
        </property>
       </widget>
-      <widget class="QPushButton" name="signup_btn_3">
+      <widget class="QPushButton" name="css_btn">
        <property name="geometry">
         <rect>
          <x>-50</x>
@@ -702,7 +702,7 @@ background-color: #123456;</string>
         <bool>true</bool>
        </property>
       </widget>
-      <widget class="QPushButton" name="signup_btn_4">
+      <widget class="QPushButton" name="javascript_btn">
        <property name="geometry">
         <rect>
          <x>-50</x>
@@ -943,19 +943,6 @@ background-color: #123456;</string>
        <bool>true</bool>
       </property>
      </widget>
-     <widget class="QLabel" name="label_6">
-      <property name="geometry">
-       <rect>
-        <x>390</x>
-        <y>90</y>
-        <width>1041</width>
-        <height>771</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>TextLabel</string>
-      </property>
-     </widget>
      <widget class="QFrame" name="frame_3">
       <property name="geometry">
        <rect>
@@ -986,6 +973,12 @@ background-color: #123456;</string>
        <property name="styleSheet">
         <string notr="true">background-color: #F8F6F0;</string>
        </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="echoMode">
+        <enum>QLineEdit::Normal</enum>
+       </property>
        <property name="placeholderText">
         <string>Rechercher un language de progammation</string>
        </property>
@@ -993,7 +986,7 @@ background-color: #123456;</string>
       <widget class="QLabel" name="label_14">
        <property name="geometry">
         <rect>
-         <x>30</x>
+         <x>10</x>
          <y>20</y>
          <width>211</width>
          <height>61</height>
@@ -1198,13 +1191,23 @@ background-color:  #FD1C03;</string>
        <enum>Qt::Horizontal</enum>
       </property>
      </widget>
+     <widget class="QTextBrowser" name="textBrowser">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>90</y>
+        <width>1041</width>
+        <height>771</height>
+       </rect>
+      </property>
+     </widget>
      <zorder>background_image_page1_4</zorder>
      <zorder>frame_5</zorder>
      <zorder>line_2</zorder>
-     <zorder>label_6</zorder>
      <zorder>frame_3</zorder>
-     <zorder>profile_result</zorder>
      <zorder>line</zorder>
+     <zorder>textBrowser</zorder>
+     <zorder>profile_result</zorder>
     </widget>
    </widget>
   </widget>
