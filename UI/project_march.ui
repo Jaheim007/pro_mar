@@ -134,7 +134,7 @@ color: #A0CFEC;</string>
       <property name="geometry">
        <rect>
         <x>70</x>
-        <y>270</y>
+        <y>280</y>
         <width>661</width>
         <height>141</height>
        </rect>
@@ -151,7 +151,7 @@ color: #1589FF;</string>
       <property name="geometry">
        <rect>
         <x>70</x>
-        <y>450</y>
+        <y>460</y>
         <width>291</width>
         <height>61</height>
        </rect>
@@ -192,7 +192,7 @@ background-color:  #1589FF;</string>
        <pixmap resource="../resource.qrc">:/Images/Static/background.webp</pixmap>
       </property>
       <property name="scaledContents">
-       <bool>true</bool>
+       <bool>false</bool>
       </property>
      </widget>
      <widget class="QLabel" name="label_5">
@@ -217,7 +217,7 @@ background-color:  #1589FF;</string>
         <x>420</x>
         <y>180</y>
         <width>531</width>
-        <height>461</height>
+        <height>581</height>
        </rect>
       </property>
       <property name="styleSheet">
@@ -249,11 +249,11 @@ border-radius: 25px;
         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; text-decoration: underline;&quot;&gt;Connectez-vous à Code Breaker&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
-      <widget class="QLineEdit" name="email_line">
+      <widget class="QLineEdit" name="username_login">
        <property name="geometry">
         <rect>
          <x>50</x>
-         <y>130</y>
+         <y>140</y>
          <width>401</width>
          <height>41</height>
         </rect>
@@ -262,14 +262,14 @@ border-radius: 25px;
         <string notr="true">background-color: #F8F6F0;</string>
        </property>
        <property name="placeholderText">
-        <string>Email</string>
+        <string>Nom d'utilisateur</string>
        </property>
       </widget>
       <widget class="QLineEdit" name="password_line">
        <property name="geometry">
         <rect>
          <x>50</x>
-         <y>230</y>
+         <y>320</y>
          <width>401</width>
          <height>41</height>
         </rect>
@@ -288,7 +288,7 @@ border-radius: 25px;
        <property name="geometry">
         <rect>
          <x>160</x>
-         <y>340</y>
+         <y>430</y>
          <width>181</width>
          <height>51</height>
         </rect>
@@ -308,13 +308,29 @@ background-color:  #1589FF;</string>
         <bool>false</bool>
        </property>
       </widget>
+      <widget class="QLineEdit" name="email_line">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>230</y>
+         <width>401</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #F8F6F0;</string>
+       </property>
+       <property name="placeholderText">
+        <string>Email</string>
+       </property>
+      </widget>
      </widget>
      <widget class="QLabel" name="label_8">
       <property name="geometry">
        <rect>
-        <x>1010</x>
+        <x>870</x>
         <y>40</y>
-        <width>221</width>
+        <width>351</width>
         <height>61</height>
        </rect>
       </property>
@@ -381,9 +397,9 @@ background-color:  #1589FF;</string>
      <widget class="QLabel" name="label_9">
       <property name="geometry">
        <rect>
-        <x>1050</x>
+        <x>920</x>
         <y>30</y>
-        <width>201</width>
+        <width>331</width>
         <height>61</height>
        </rect>
       </property>
@@ -456,7 +472,7 @@ border-radius: 25px
        <property name="geometry">
         <rect>
          <x>50</x>
-         <y>130</y>
+         <y>200</y>
          <width>401</width>
          <height>41</height>
         </rect>
@@ -472,7 +488,7 @@ border-radius: 25px
        <property name="geometry">
         <rect>
          <x>50</x>
-         <y>220</y>
+         <y>280</y>
          <width>401</width>
          <height>41</height>
         </rect>
@@ -488,7 +504,7 @@ border-radius: 25px
        <property name="geometry">
         <rect>
          <x>50</x>
-         <y>310</y>
+         <y>360</y>
          <width>401</width>
          <height>41</height>
         </rect>
@@ -504,7 +520,7 @@ border-radius: 25px
        <property name="geometry">
         <rect>
          <x>50</x>
-         <y>400</y>
+         <y>440</y>
          <width>401</width>
          <height>41</height>
         </rect>
@@ -523,7 +539,7 @@ border-radius: 25px
        <property name="geometry">
         <rect>
          <x>50</x>
-         <y>490</y>
+         <y>520</y>
          <width>401</width>
          <height>41</height>
         </rect>
@@ -542,7 +558,7 @@ border-radius: 25px
        <property name="geometry">
         <rect>
          <x>160</x>
-         <y>580</y>
+         <y>590</y>
          <width>181</width>
          <height>51</height>
         </rect>
@@ -560,6 +576,22 @@ background-color:  #1589FF;</string>
        </property>
        <property name="flat">
         <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="username_sign">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>120</y>
+         <width>401</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #F8F6F0;</string>
+       </property>
+       <property name="placeholderText">
+        <string>Nom d'utilisateur</string>
        </property>
       </widget>
      </widget>
@@ -585,7 +617,7 @@ background-color:  #1589FF;</string>
      <zorder>frame_2</zorder>
      <zorder>label_13</zorder>
     </widget>
-    <widget class="QWidget" name="page">
+    <widget class="QWidget" name="home_page">
      <widget class="QLabel" name="background_image_page1_4">
       <property name="geometry">
        <rect>
@@ -618,7 +650,7 @@ background-color:  #1589FF;</string>
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap resource="../resource.qrc">:/Images/Static/LogoMakr-80ZEB9.png</pixmap>
+       <pixmap resource="../resource.qrc">:/Images/Static/LogoMakr-0NnMg3.png</pixmap>
       </property>
      </widget>
      <widget class="QLineEdit" name="nom_line_2">
@@ -666,17 +698,19 @@ background-color:  #1589FF;</string>
        <bool>true</bool>
       </property>
      </widget>
-     <widget class="QPushButton" name="pushButton_2">
+     <widget class="QPushButton" name="profile">
       <property name="geometry">
        <rect>
-        <x>1320</x>
+        <x>1330</x>
         <y>30</y>
-        <width>51</width>
-        <height>51</height>
+        <width>71</width>
+        <height>61</height>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true"/>
+       <string notr="true">font: 12pt &quot;.AppleSystemUIFont&quot;;
+color:#FFF;
+background-color:  #FFF;</string>
       </property>
       <property name="text">
        <string/>
@@ -695,8 +729,98 @@ background-color:  #1589FF;</string>
        <bool>true</bool>
       </property>
       <property name="flat">
-       <bool>true</bool>
+       <bool>false</bool>
       </property>
+     </widget>
+     <widget class="QFrame" name="exa">
+      <property name="geometry">
+       <rect>
+        <x>970</x>
+        <y>120</y>
+        <width>441</width>
+        <height>381</height>
+       </rect>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <widget class="QPushButton" name="disconnected">
+       <property name="geometry">
+        <rect>
+         <x>350</x>
+         <y>290</y>
+         <width>71</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 12pt &quot;.AppleSystemUIFont&quot;;
+color:#FFF;
+background-color:  #FFF;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="../resource.qrc">
+         <normaloff>:/Images/Static/shutdown_48px.png</normaloff>:/Images/Static/shutdown_48px.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="default">
+        <bool>false</bool>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_15">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>40</y>
+         <width>331</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 16pt &quot;.AppleSystemUIFont&quot;;
+</string>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_12">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>120</y>
+         <width>331</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 16pt &quot;.AppleSystemUIFont&quot;;
+</string>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
      </widget>
     </widget>
    </widget>
