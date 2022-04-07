@@ -1,6 +1,3 @@
-import imp
-from turtle import home
-from urllib import request
 from PyQt5.QtWidgets import QApplication, QMainWindow, QWidget, QMessageBox
 from Widget.project_march import Ui_Project
 import sqlite3
@@ -14,14 +11,16 @@ import requests
 regex = r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'
 
 class Project(QMainWindow, Ui_Project):
+    count = 0
+    
     def __init__(self):    
         super().__init__()
         self.setupUi(self)
-        url_html = 'https://developer.mozilla.org/en-US/docs/Web/HTML'
-        source = requests.get(url_html).text
-        soup = BeautifulSoup(source, "html.parser")
-        print(soup)
-
+        # url_html = 'https://developer.mozilla.org/en-US/docs/Web/HTML'
+        # source = requests.get(url_html).text
+        # soup = BeautifulSoup(source, "html.parser")
+        # print(soup)
+       
 #These are the different btnand their different functions
         self.start_now_btn.clicked.connect(self.started)
         self.login_btn_to_direct.clicked.connect(self.loginpage)
@@ -31,8 +30,9 @@ class Project(QMainWindow, Ui_Project):
         self.signup_btn.clicked.connect(self.save_in_database)
         self.login_btn.clicked.connect(self.verify)
         self.profile.clicked.connect(self.hide_show)
-        # self.disconnected.clicked.connect(self.disconnect)
-        # self.exa.hide()
+        self.disconnected.clicked.connect(self.disconnect)
+        self.profile_result.hide()
+
 #The Get Started btn in the center which is supposed to send me to the sign-up page. 
     def started(self):
         self.stackedWidget.setCurrentWidget(self.signup_page)
@@ -131,7 +131,7 @@ class Project(QMainWindow, Ui_Project):
     def verify(self): 
         open = sqlite3.connect('Database.db')
         cur = open.cursor()
-        com = open.execute("SELECT * FROM Userdata where username = ? AND email = ? AND password = ?",(self.username_login.text() ,self.email_line.text(), self.password_line.text())) 
+        com = open.execute("SELECT * FROM Userdata where username = ? AND email = ? AND password = ? ",(self.username_login.text() ,self.email_line.text(), self.password_line.text())) 
         don = com.fetchone()
         
         if don:
@@ -144,16 +144,18 @@ class Project(QMainWindow, Ui_Project):
             self.username_login.clear()
             self.email_line.clear()
             self.password_line.clear()
-
     
-        
     def hide_show(self):
-       self.exa.show()
-       self.label_15.setText(self.username_login.text())
-       self.label_12.setText(self.email_line.text())
-
-    # def disconnect(self):
-    #     QApplication.quit()
+        if Project.count % 2 == 0: 
+            self.profile_result.show()
+            self.label_15.setText(self.username_login.text())
+            self.label_12.setText(self.email_line.text())  
+        else:   
+            self.profile_result.hide()
+        Project.count += 1
+        
+    def disconnect(self):
+        QApplication.quit()
 
             
         
