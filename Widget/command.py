@@ -31,8 +31,8 @@ class Project(QMainWindow, Ui_Project):
         self.signup_btn.clicked.connect(self.save_in_database)
         self.login_btn.clicked.connect(self.verify)
         self.profile.clicked.connect(self.hide_show)
-        self.disconnected.clicked.connect(self.disconnect)
-        self.exa.hide()
+        # self.disconnected.clicked.connect(self.disconnect)
+        # self.exa.hide()
 #The Get Started btn in the center which is supposed to send me to the sign-up page. 
     def started(self):
         self.stackedWidget.setCurrentWidget(self.signup_page)
@@ -152,8 +152,8 @@ class Project(QMainWindow, Ui_Project):
        self.label_15.setText(self.username_login.text())
        self.label_12.setText(self.email_line.text())
 
-    def disconnect(self):
-        QApplication.quit()
+    # def disconnect(self):
+    #     QApplication.quit()
 
             
         
