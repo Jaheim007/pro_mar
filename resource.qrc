@@ -1,8 +1,13 @@
 <RCC>
   <qresource prefix="Images">
-    <file>Static/account_50px.png</file>
-    <file>Static/shutdown_48px.png</file>
     <file>Static/LogoMakr-0NnMg3.png</file>
+    <file>Static/account_50px.png</file>
+    <file>Static/images (2)logo.png</file>
+    <file>Static/account_32px.png</file>
+    <file>Static/search_24px.png</file>
+    <file>Static/shutdown_48px.png</file>
+    <file>Static/téléchargement-removebg-preview.png</file>
+    <file>Static/images__1_-removebg-preview.png</file>
     <file>Static/search_24px.png</file>
     <file>Static/icons8-contacts-26.png</file>
     <file>Static/icons8-search-32.png</file>

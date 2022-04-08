@@ -1,4 +1,4 @@
-from urllib import request
+
 from PyQt5.QtWidgets import QApplication, QMainWindow, QWidget, QMessageBox
 from Widget.project_march import Ui_Project
 import sqlite3
@@ -12,14 +12,55 @@ import requests
 regex = r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'
 
 class Project(QMainWindow, Ui_Project):
+    count = 0
+    
+    
     def __init__(self):    
         super().__init__()
         self.setupUi(self)
-        url_html = 'https://developer.mozilla.org/en-US/docs/Web/HTML'
+        
+        global html_text
+        global css_text
+        global javascript
+        global python_re
+        global php
+        global flutter
+        
+        url_html = 'https://developer.mozilla.org/fr/docs/Web/HTML'
+        url_css = 'https://developer.mozilla.org/fr/docs/Web/CSS'
+        url_javascript = 'https://developer.mozilla.org/fr/docs/Web/JavaScript'
+        url_python = 'https://developer.mozilla.org/fr/docs/Glossary/Python'
+        url_php = 'https://www.commentcamarche.net/contents/1351-php-introduction'
+        url_flutter = 'https://www.didierboelens.com/fr/2018/04/flutter-introduction/#:~:text=Flutter%20offre%20un%20moyen%20de,natif%20pour%20iOS%20et%20Android.'
+        
         source = requests.get(url_html).text
-        soup = BeautifulSoup(source, "html.parser")
-        print(soup)
+        source1 = requests.get(url_css).text
+        source2 = requests.get(url_javascript).text
+        source3 = requests.get(url_python).text
+        source4 = requests.get(url_php).text
+        source5= requests.get(url_flutter).text
 
+        soup_html = BeautifulSoup(source, "lxml")
+        soup_css = BeautifulSoup(source1, "lxml")
+        soup_javascript = BeautifulSoup(source2, "lxml")
+        soup_python = BeautifulSoup(source3, "lxml")
+        soup_php = BeautifulSoup(source4, "lxml")
+        soup_flutter = BeautifulSoup(source5, "lxml")
+        
+        # ccs_on_html = soup_css.find('link', href = "/static/css/main.6be18ab6.chunk.css")
+        
+        html_text = soup_html.find('article', class_="main-page-content")
+        css_text = soup_css.find('article', class_ = "main-page-content")
+        javascript = soup_javascript.find('article', class_= "main-page-content")
+        python_re = soup_python.find('article', class_= "main-page-content")
+        php = soup_php.find('div', class_= "typo_content typo_content--img")
+        flutter = soup_flutter.find('div', class_= "content main-content-wrap post-content")
+    
+        
+        
+        # print(soup)
+       
+       
 #These are the different btnand their different functions
         self.start_now_btn.clicked.connect(self.started)
         self.login_btn_to_direct.clicked.connect(self.loginpage)
@@ -29,8 +70,15 @@ class Project(QMainWindow, Ui_Project):
         self.signup_btn.clicked.connect(self.save_in_database)
         self.login_btn.clicked.connect(self.verify)
         self.profile.clicked.connect(self.hide_show)
-        # self.disconnected.clicked.connect(self.disconnect)
-        # self.exa.hide()
+        self.disconnected.clicked.connect(self.disconnect)
+        self.html_btn.clicked.connect(self.scrap_html)
+        self.css_btn.clicked.connect(self.scrap_css)
+        self.javascript_btn.clicked.connect(self.scrap_javascript)
+        self.python_btn.clicked.connect(self.scrap_python)
+        self.php_btn.clicked.connect(self.scrap_php)
+        self.flutter_btn.clicked.connect(self.scrap_flutter)
+        self.profile_result.hide()
+
 #The Get Started btn in the center which is supposed to send me to the sign-up page. 
     def started(self):
         self.stackedWidget.setCurrentWidget(self.signup_page)
@@ -70,11 +118,7 @@ class Project(QMainWindow, Ui_Project):
         
         elif self.confirm_password.text() != self.sign_password_line.text():  
             QMessageBox.warning(self, "Error", "Vos mots de passe ne correspondent pas")
-            self.nom_line.clear()
-            self.prenom_line.clear()
-            self.sign_email_line.clear()
-            self.sign_password_line.clear()
-            self.confirm_password.clear()
+        
             
         elif self.confirm_password.text() == self.sign_password_line.text():  
             if (re.fullmatch(regex, self.sign_email_line.text())):  
@@ -120,16 +164,12 @@ class Project(QMainWindow, Ui_Project):
             
             else: 
                 QMessageBox.warning(self, "Error", "Merci de saisir votre adresse email au format : votreexemple@exemple.com")
-                self.nom_line.clear()
-                self.prenom_line.clear()
-                self.sign_email_line.clear()
-                self.sign_password_line.clear()
-                self.confirm_password.clear()
+                
             
     def verify(self): 
         open = sqlite3.connect('Database.db')
         cur = open.cursor()
-        com = open.execute("SELECT * FROM Userdata where username = ? AND email = ? AND password = ?",(self.username_login.text() ,self.email_line.text(), self.password_line.text())) 
+        com = open.execute("SELECT * FROM Userdata where username = ? AND email = ? AND password = ? ",(self.username_login.text() ,self.email_line.text(), self.password_line.text())) 
         don = com.fetchone()
         
         if don:
@@ -142,16 +182,39 @@ class Project(QMainWindow, Ui_Project):
             self.username_login.clear()
             self.email_line.clear()
             self.password_line.clear()
-
     
-        
     def hide_show(self):
-       self.exa.show()
-       self.label_15.setText(self.username_login.text())
-       self.label_12.setText(self.email_line.text())
+        if Project.count % 2 == 0: 
+            self.profile_result.show()
+            self.label_15.setText(self.username_login.text())
+            self.label_12.setText(self.email_line.text())  
+        else:   
+            self.profile_result.hide()
+        Project.count += 1
+        
+    def disconnect(self):
+        QApplication.quit()
+        
+    def scrap_html(self):   
+        self.textBrowser.setText(str(html_text.text))  
+        
+    def scrap_css(self):
+        self.textBrowser.setText(str(css_text.text))
+        
+    def scrap_javascript(self):     
+       self.textBrowser.setText(str(javascript.text)) 
 
-    # def disconnect(self):
-    #     QApplication.quit()
+    def scrap_python(self):
+        self.textBrowser.setText(str(python_re.text))
+    
+    def scrap_php(self):
+        self.textBrowser.setText(str(php.text))
+
+    def scrap_flutter(self):
+        self.textBrowser.setText(str(flutter.text))
+        
+        # html_text = soup.find('main', class_="main-content")
+        # print(html_text)
 
             
         
