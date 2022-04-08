@@ -46,22 +46,6 @@
        <bool>true</bool>
       </property>
      </widget>
-     <widget class="QLabel" name="label">
-      <property name="geometry">
-       <rect>
-        <x>40</x>
-        <y>40</y>
-        <width>211</width>
-        <height>61</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap resource="../resource.qrc">:/Images/Static/LogoMakr-0NnMg3.png</pixmap>
-      </property>
-     </widget>
      <widget class="QPushButton" name="login_btn_to_direct">
       <property name="geometry">
        <rect>
@@ -97,8 +81,8 @@ color: #1589FF;</string>
       </property>
       <property name="styleSheet">
        <string notr="true">font: 15pt &quot;.AppleSystemUIFont&quot;;
-color: #1589FF;
-background-color: #FFF;</string>
+background-color: #FFF;
+color: #1589FF;</string>
       </property>
       <property name="text">
        <string>S'inscrire</string>
@@ -135,7 +119,7 @@ color: #A0CFEC;</string>
        <rect>
         <x>70</x>
         <y>280</y>
-        <width>661</width>
+        <width>781</width>
         <height>141</height>
        </rect>
       </property>
@@ -144,14 +128,14 @@ color: #A0CFEC;</string>
 color: #1589FF;</string>
       </property>
       <property name="text">
-       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Rejoignez les millions d'apprenants à coder &lt;/p&gt;&lt;p&gt;avec Code Breaker gratuitement&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Inscrivez-vous pour apprendre quelques informations sur &lt;/p&gt;&lt;p&gt;la programmation avec Code Breaker.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
      </widget>
      <widget class="QPushButton" name="start_now_btn">
       <property name="geometry">
        <rect>
-        <x>70</x>
-        <y>460</y>
+        <x>80</x>
+        <y>450</y>
         <width>291</width>
         <height>61</height>
        </rect>
@@ -169,6 +153,43 @@ background-color:  #1589FF;</string>
       </property>
       <property name="flat">
        <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="code1">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>40</y>
+        <width>211</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 15pt &quot;.AppleSystemUIFont&quot;;
+background-color: rgb(64, 133, 255);
+color: #1589FF;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="../resource.qrc">
+        <normaloff>:/Images/Static/LogoMakr-0NnMg3.png</normaloff>:/Images/Static/LogoMakr-0NnMg3.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>200</width>
+        <height>200</height>
+       </size>
+      </property>
+      <property name="default">
+       <bool>false</bool>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
       </property>
      </widget>
     </widget>
@@ -193,22 +214,6 @@ background-color:  #1589FF;</string>
       </property>
       <property name="scaledContents">
        <bool>false</bool>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_5">
-      <property name="geometry">
-       <rect>
-        <x>40</x>
-        <y>40</y>
-        <width>211</width>
-        <height>61</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap resource="../resource.qrc">:/Images/Static/LogoMakr-0NnMg3.png</pixmap>
       </property>
      </widget>
      <widget class="QFrame" name="frame">
@@ -366,6 +371,43 @@ background-color:  #1589FF;
       </property>
       <property name="flat">
        <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="code2">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>50</y>
+        <width>211</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 15pt &quot;.AppleSystemUIFont&quot;;
+background-color: rgb(64, 133, 255);
+color: #1589FF;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="../resource.qrc">
+        <normaloff>:/Images/Static/LogoMakr-0NnMg3.png</normaloff>:/Images/Static/LogoMakr-0NnMg3.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>200</width>
+        <height>200</height>
+       </size>
+      </property>
+      <property name="default">
+       <bool>false</bool>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
       </property>
      </widget>
     </widget>
@@ -595,27 +637,48 @@ background-color:  #1589FF;</string>
        </property>
       </widget>
      </widget>
-     <widget class="QLabel" name="label_17">
+     <widget class="QPushButton" name="code3">
       <property name="geometry">
        <rect>
         <x>40</x>
-        <y>40</y>
+        <y>50</y>
         <width>211</width>
-        <height>61</height>
+        <height>51</height>
        </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 15pt &quot;.AppleSystemUIFont&quot;;
+background-color: rgb(64, 133, 255);
+color: #1589FF;</string>
       </property>
       <property name="text">
        <string/>
       </property>
-      <property name="pixmap">
-       <pixmap resource="../resource.qrc">:/Images/Static/LogoMakr-0NnMg3.png</pixmap>
+      <property name="icon">
+       <iconset resource="../resource.qrc">
+        <normaloff>:/Images/Static/LogoMakr-0NnMg3.png</normaloff>:/Images/Static/LogoMakr-0NnMg3.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>200</width>
+        <height>200</height>
+       </size>
+      </property>
+      <property name="default">
+       <bool>false</bool>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
       </property>
      </widget>
      <zorder>background_image_page1_3</zorder>
      <zorder>login_btn_to_loginpage</zorder>
      <zorder>label_9</zorder>
      <zorder>frame_2</zorder>
-     <zorder>label_17</zorder>
+     <zorder>code3</zorder>
     </widget>
     <widget class="QWidget" name="home_page">
      <widget class="QFrame" name="frame_5">
@@ -726,7 +789,7 @@ background-color: #123456;</string>
         <bool>true</bool>
        </property>
       </widget>
-      <widget class="QPushButton" name="signup_btn_5">
+      <widget class="QPushButton" name="python_btn">
        <property name="geometry">
         <rect>
          <x>-110</x>
@@ -750,7 +813,7 @@ background-color: #123456;</string>
         <bool>true</bool>
        </property>
       </widget>
-      <widget class="QPushButton" name="signup_btn_6">
+      <widget class="QPushButton" name="flutter_btn">
        <property name="geometry">
         <rect>
          <x>-170</x>
@@ -774,7 +837,7 @@ background-color: #123456;</string>
         <bool>true</bool>
        </property>
       </widget>
-      <widget class="QPushButton" name="signup_btn_7">
+      <widget class="QPushButton" name="php_btn">
        <property name="geometry">
         <rect>
          <x>-70</x>
@@ -961,7 +1024,7 @@ background-color: #123456;</string>
       <property name="frameShadow">
        <enum>QFrame::Raised</enum>
       </property>
-      <widget class="QLineEdit" name="nom_line_2">
+      <widget class="QLineEdit" name="search_bar">
        <property name="geometry">
         <rect>
          <x>990</x>
@@ -981,22 +1044,6 @@ background-color: #123456;</string>
        </property>
        <property name="placeholderText">
         <string>Rechercher un language de progammation</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_14">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>20</y>
-         <width>211</width>
-         <height>61</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string/>
-       </property>
-       <property name="pixmap">
-        <pixmap resource="../resource.qrc">:/Images/Static/LogoMakr-0NnMg3.png</pixmap>
        </property>
       </widget>
       <widget class="QPushButton" name="profile">
@@ -1034,7 +1081,7 @@ background-color: #123456;</string>
         <bool>true</bool>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton_2">
+      <widget class="QPushButton" name="search_btn">
        <property name="geometry">
         <rect>
          <x>920</x>
@@ -1063,6 +1110,79 @@ background-color: #123456;</string>
         <bool>true</bool>
        </property>
       </widget>
+      <widget class="QPushButton" name="code4">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>20</y>
+         <width>211</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 15pt &quot;.AppleSystemUIFont&quot;;
+background-color: #123456;
+color: #1589FF;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="../resource.qrc">
+         <normaloff>:/Images/Static/LogoMakr-0NnMg3.png</normaloff>:/Images/Static/LogoMakr-0NnMg3.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>200</width>
+         <height>200</height>
+        </size>
+       </property>
+       <property name="default">
+        <bool>false</bool>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+     <widget class="Line" name="line">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>70</y>
+        <width>1431</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QTextBrowser" name="textBrowser">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>90</y>
+        <width>1041</width>
+        <height>771</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
      </widget>
      <widget class="QFrame" name="profile_result">
       <property name="geometry">
@@ -1178,35 +1298,12 @@ background-color:  #FD1C03;</string>
        </property>
       </widget>
      </widget>
-     <widget class="Line" name="line">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>70</y>
-        <width>1431</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <property name="orientation">
-       <enum>Qt::Horizontal</enum>
-      </property>
-     </widget>
-     <widget class="QTextBrowser" name="textBrowser">
-      <property name="geometry">
-       <rect>
-        <x>390</x>
-        <y>90</y>
-        <width>1041</width>
-        <height>771</height>
-       </rect>
-      </property>
-     </widget>
      <zorder>background_image_page1_4</zorder>
+     <zorder>textBrowser</zorder>
      <zorder>frame_5</zorder>
      <zorder>line_2</zorder>
      <zorder>frame_3</zorder>
      <zorder>line</zorder>
-     <zorder>textBrowser</zorder>
      <zorder>profile_result</zorder>
     </widget>
    </widget>
