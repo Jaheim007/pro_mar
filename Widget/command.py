@@ -1,4 +1,4 @@
-from pydoc import html
+
 from urllib import request
 from PyQt5.QtWidgets import QApplication, QMainWindow, QWidget, QMessageBox
 from Widget.project_march import Ui_Project
